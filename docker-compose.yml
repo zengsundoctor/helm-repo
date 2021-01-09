@@ -6,7 +6,7 @@ services:
     privileged: true
     # restart: always
     ports:
-      - '80:80'
+      - '9080:80'
     volumes:
       - "/etc/localtime:/etc/localtime:ro"
       - "/export/logs/web/:/var/log/nginx/"
