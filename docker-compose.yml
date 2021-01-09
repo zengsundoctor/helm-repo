@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+
+  web-app:
+    image: my-registry:5000/helm-repo
+    privileged: true
+    # restart: always
+    ports:
+      - '80:80'
+    volumes:
+      - "/etc/localtime:/etc/localtime:ro"
+      - "/export/logs/web/:/var/log/nginx/"
